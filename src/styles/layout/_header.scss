@@ -1,0 +1,217 @@
+@import "../abstracts/constants";
+@import "../abstracts/mixins";
+
+.header {
+    height: 80px;
+    background: #000;
+    z-index: 10;
+    position: relative;
+    @include media-header-tablet {
+        height: 34px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    @include media-mobile {
+        //width: 320px;
+        //margin: auto;
+
+    }
+
+    &__block {
+        max-width: $container-desktop-width;
+        margin: auto ;
+        padding: 14px 0;
+        display: flex;
+        align-items: center;
+        @include media-small-desktop {
+            max-width: $container-small-desktop-width;
+        }
+        @include media-tablet {
+            max-width: 700px;
+        }
+        @include media-header-tablet {
+            justify-content: space-between;
+            max-width: $container-tablet;
+            padding: 0px 0;
+
+        }
+        @include media-mobile {
+            max-width: $container-mobile;
+        }
+
+    }
+
+    &__logo {
+        align-self: center;
+        @include media-header-tablet {
+            padding-top: 3px;
+            margin-left: -7px;
+        }
+    }
+
+    &__nav {
+        //font-style: normal;
+        //font-weight: 500;
+        //font-size: 16px;
+        //line-height: 140%;
+        margin-left: 63px;
+        @include media-tablet {
+            margin-left: 20px;
+        }
+        @include media-header-tablet {
+            display: none;
+        }
+    }
+
+    &__designed {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFF;
+        margin-left: auto;
+        @include media-header-tablet {
+            display: none;
+        }
+    }
+    &__burger {
+        display: none;
+        width: 18px;
+        height: 15px;
+        @include media-header-tablet {
+            //display: block;
+            //margin: 2px 0 0px 0;
+        }
+    }
+}
+
+.logo {
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: relative;
+    @include media-header-tablet {
+        width: 46.86px;
+        height: 29.03px;
+        border: none;
+    }
+
+    &__h1 {
+        width: 72.49px;
+        height: 44.91px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.0145px;
+        text-align: center;
+        color: #FFF;
+        margin: 3.55px 4.75px;
+        @include media-header-tablet {
+            font-size: 12.2899px;
+            line-height: 120%;
+            margin: 0;
+            width: 60px;
+            //height: 29.03px;
+        }
+    }
+
+    &__a {
+        color: #FFF;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 7px;
+        left: 9px;
+        @include media-header-tablet {
+            width: 9px;
+            height: 14px;
+            bottom: 2px;
+        }
+    }
+}
+
+.logo-footer {
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+    @include media-mobile {
+        width: 128px;
+        height: 23px;
+        border: none;
+        margin: auto;
+    }
+
+    &__h1 {
+        width: 72.49px;
+        height: 44.91px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.0145px;
+        text-align: center;
+        color: #FFF;
+        margin: 3.55px 4.75px;
+        @include media-mobile {
+            width: 128px;
+            height: 23px;
+            margin: 0;
+        }
+    }
+
+    &__a {
+        color: #FFF;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 7px;
+        left: 9px;
+        @include media-mobile {
+            bottom: 6px;
+            left: 73px;
+        }
+    }
+}
+
+
+.designed {
+    color: #FFF;
+}
+
+.menu {
+    display: flex;
+    width: 472px;
+    justify-content: space-between;
+    @include media-small-desktop {
+        width: 432px;
+    }
+    @include media-tablet {
+        max-width: 360px;
+    }
+
+    &__item {
+        align-self: center;
+    }
+
+    &__item-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFF;
+    }
+
+    &__item-link:hover {
+    }
+
+    &__item-link--active {
+        color: orange;
+        pointer-events: none;
+    }
+}

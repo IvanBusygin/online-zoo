@@ -1,0 +1,71 @@
+.burger {
+    display: none;
+    position: relative;
+    //height: 10px;
+    //width: 18px;
+    z-index: 102;
+    cursor: pointer;
+    overflow: hidden;
+    @include media-header-tablet {
+        display: block;
+    }
+
+    &__img {
+
+    }
+
+    //&.active-burger {
+    //    &:before {
+    //        background: white;
+    //        transform: rotate(45deg);
+    //        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    //        top: 8px;
+    //    }
+    //
+    //    &:after {
+    //        background: white;
+    //        transform: rotate(-45deg);
+    //        bottom: 10px;
+    //        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    //    }
+    //
+    //    & span {
+    //        transform: scale(0);
+    //    }
+    //}
+
+    //&:before,
+    //&:after {
+    //    content: '';
+    //    position: absolute;
+    //    height: 2px;
+    //    width: 100%;
+    //    border-radius: 2px;
+    //    background: white;
+    //    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    //}
+
+    //&:before {
+    //    top: 0;
+    //}
+    //
+    //&:after {
+    //    bottom: 0;
+    //}
+    //
+    //span {
+    //    position: absolute;
+    //    top: 4px;
+    //    right: 0;
+    //    width: 100%;
+    //    background: white;
+    //    height: 2px;
+    //    border-radius: 2px;
+    //    transform: scale(1);
+    //    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    //}
+
+    //&:hover > span {
+    //    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    //}
+}

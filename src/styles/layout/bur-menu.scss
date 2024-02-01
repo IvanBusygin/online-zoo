@@ -1,0 +1,79 @@
+.bur-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(1,1,1,0.55);
+    z-index: 10;
+
+    &__block {
+        border: 1px transparent solid;
+        height: 330px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        background-color: white;
+    }
+
+    &__logo {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 66px;
+        height: 42px;
+        border: 0.8px solid #FE9013;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__nav {
+        margin-top: 30px;
+        margin-left: 10px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    &__item-link {
+        color: #333B41;
+        &:hover {
+            font-weight: 500;
+        }
+    }
+
+    &__h1 {
+        margin: auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15.2116px;
+        line-height: 120%;
+    }
+
+    &__a {
+        color: #FE9013;
+    }
+
+    &__img  {
+        position: absolute;
+        bottom: 6px;
+        left: 6px;
+    }
+
+    &__close {
+        font-size: 28px;
+        cursor: pointer;
+        float: right;
+        margin-top: 15px;
+        margin-right: 20px;
+        padding: 5px;
+        &:hover {
+            border: #FE9013 solid 1px;
+            border-radius: 50px;
+        }
+    }
+}
